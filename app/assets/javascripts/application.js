@@ -10,7 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require custom.js
+//= require jquery-ui.min.js
+//= require jquery.min.js
+//= require lightbox.js
+//= require slides.js
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+= require turbolinks
 //= require_tree .
+//= require custom.js

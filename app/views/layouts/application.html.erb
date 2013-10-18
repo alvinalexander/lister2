@@ -1,14 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Lister2</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+
+	<!-- ### Define Charset ### -->
+	<meta charset="utf-8">
+
+	<!-- ### Responsive MetaTag ### -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- ### Page Title ### -->
+	<title> Study buddy | </title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+
+	<!-- ### Description and Keyword ### -->
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+
+	<!-- ### Stylesheet and Bootstrap ### -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/subpages.css" />
+	<link rel="stylesheet" href="css/lightbox.css" />
+
+	<!-- ### Favicon ### -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+	<!-- ### Google Fonts ### -->
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,200" rel="stylesheet" type="text/css"/>
+
+	<!-- ### Javascript Files ### -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css"/> <![endif]-->
+
 </head>
 <body>
+	<div class="wrap-switcher">
+	 <!-- ### START - Header Section ### -->
+	<%= render 'layouts/header' %>
+	<!-- ### END - Header Section ### -->
+	<div class="clear"></div>
 
-<%= yield %>
+	<%= yield %>
 
+
+	<!-- ### START - FOOTER Section ### -->
+	<%= render 'layouts/footer' %>
+	<!-- ### END - FOOTER Section ### -->
+
+
+	</div>
 </body>
 </html>
